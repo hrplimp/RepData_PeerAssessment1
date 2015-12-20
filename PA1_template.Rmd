@@ -28,7 +28,7 @@ In this assignment we are asked to answer several questions about the data.  The
 
 ```{r, echo=TRUE}
 #import and Process data
-ActivityData<-read.csv("activity.csv", header = TRUE)
+ActivityData<-read.csv("activity/activity.csv", header = TRUE)
 ActivityData[,2] <- as.Date(ActivityData[,2], format = "%Y-%m-%d")  
 #calcualates total steps per day
 ActivityData_day <- aggregate(ActivityData$steps, by = list(ActivityData$date), sum)
@@ -136,6 +136,6 @@ qplot(interval, steps, data=graphdata,facets=DayType~.,geom="line")
 
 ```
  
- As you can see in the graph, the Across intervals the weekends have more consistent step averages where on the weekdays, there is a dip in the middle of the day.
+ As you can see in the graphs, The patterns on weekends and weekdays vary.  Across the intervals the weekends have more consistent step averages where on the weekdays, there is a dip in the middle of the day, that comes back up just a little towards the end. 
  
  
