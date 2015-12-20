@@ -2,7 +2,7 @@
 title: "Reproducible_Research_PA1"
 author: "hrplimp"
 date: "Sunday, December 20, 2015"
-output: html_document
+output: html_document 
 ---
 
 This is an R Markdown document for Peer Assessment 1 of the Reproducable Research class in the data science specialty through John Hopkins University and Coursera. 
